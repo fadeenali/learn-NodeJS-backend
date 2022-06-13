@@ -24,6 +24,6 @@ const schema = mongoose.Schema({
   },
 });
 
-const BM_Model = mongoose.model("BM_Model", schema);
+const BM_Model = mongoose.model("Coach_Model", schema);
 
 module.exports = BM_Model;

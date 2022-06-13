@@ -4,12 +4,14 @@ const CourseModel = require("./modules/course/model/Course.model");
 const courseController = require("./modules/course/controller/Course.controller");
 const admissionController = require("./modules/admission/controller/admission.controller");
 const BMController = require("./modules/Batchmanager/controller/BM_controller");
+const coachController = require("./modules/coach/controller/Coach_controller");
 const app = express();
 app.use(express.json());
 
 app.use("/course", courseController);
 app.use("/admission", admissionController);
 app.use("/BatchManager", BMController);
+app.use("/coach", coachController);
 
 async function main() {
   try {
